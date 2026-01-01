@@ -13,7 +13,7 @@ const StudentsSlice = createSlice({
     addStudentName: (state, action) => {
       state.studentName.push({
         id: state.studentName.length + 1,
-        sdudentName: action.payload,
+        studentName: action.payload,
       });
     },
 

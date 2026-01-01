@@ -12,15 +12,15 @@ export default function StudentsList() {
   return (
     <div className="students__data">
       {/*User name*/}
-      <h2>User Data</h2>
+      <h2>Students Data</h2>
       <div className="added__students">
         <div className="students_nameList">
           <ul>
-            <h3>User Name</h3>
+            <h3>Student Name</h3>
             {TheName.map((item) => (
               <li key={item.id}>
                 <p>
-                  {item.id}. {item.userName}
+                  {item.id}. {item.studentName}
                 </p>
                 <button onClick={() => dispatch(removeStudentName(item.id))}>
                   Remove
@@ -32,11 +32,11 @@ export default function StudentsList() {
         {/*User course*/}
         <div className="students_courseList">
           <ul>
-            <h3>User Course</h3>
+            <h3>Student Course</h3>
             {TheCourse.map((item) => (
               <li>
                 <p>
-                  {item.id}. {item.userCourse}
+                  {item.id}. {item.studentCourse}
                 </p>
                 <button onClick={() => dispatch(removeStudentCourse(item.id))}>
                   Remove
