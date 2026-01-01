@@ -1,0 +1,72 @@
+.students__data {
+  margin-top: 4rem;
+}
+
+.students__data h2 {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.added__students {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.added__students ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+
+.added__students ul li {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px var(--color-dark);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.added__students ul li p {
+  text-transform: capitalize;
+}
+.added__students ul li button {
+  all: unset;
+
+  letter-spacing: 1px;
+  color: var(--color-lighter);
+  background-color: var(--color-red);
+  padding: 8px 20px;
+  border-radius: 6px;
+
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.added__students ul li button:hover {
+  opacity: 0.9;
+}
+.students_nameList,
+.students_courseList {
+  padding: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+/*Responsive Source*/
+
+@media screen and (max-width: 750px) {
+  .students__data {
+    margin-top: 8rem;
+  }
+  .students__data h2 {
+    margin-bottom: 1.5rem;
+  }
+  .added__students {
+    flex-direction: column;
+  }
+
+  .students_nameList,
+  .students_courseList {
+    width: 100%;
+  }
+}

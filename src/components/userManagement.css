@@ -1,0 +1,44 @@
+.students__managements {
+  max-width: 65rem;
+  margin: 2rem auto;
+  border-radius: 14px;
+  background-color: var(--color-lighte);
+  padding: 3rem 2rem 1.5rem;
+}
+
+.students__managements h1 {
+  margin-bottom: 4rem;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.students__managements h1 span {
+  display: inline-block;
+  color: var(--color-redux);
+}
+
+.student__contents {
+  margin-top: 2rem;
+}
+
+/*Responsive Source*/
+
+@media screen and (max-width: 750px) {
+  .students__managements {
+    height: calc(100vh - 50px);
+    padding: 2rem 1.5rem 1.5rem;
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .students__managements {
+    padding: 2.5rem 0.8rem 1.5rem;
+  }
+  .students__managements h1 {
+    word-break: break-all;
+  }
+}
